@@ -1,0 +1,59 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills", 
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "IT Skills Showcase",
+    "subtitle": "Full-Stack Developer & Technology Enthusiast",
+    "description": "Passionate about creating innovative solutions with modern technologies. Specializing in frontend, backend, and DevOps practices.",
+    "cta": "View My Work",
+    "contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Professional Background & Experience",
+    "description": "I'm a passionate full-stack developer with expertise in modern web technologies.",
+    "experience": "Years of Experience",
+    "projects": "Projects Completed",
+    "technologies": "Technologies Mastered"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies & Expertise",
+    "frontend": "Frontend Development",
+    "backend": "Backend Development", 
+    "devops": "DevOps & Cloud",
+    "tools": "Development Tools"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Showcase of Recent Work",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo",
+    "technologies": "Technologies Used"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your next project",
+    "name": "Full Name",
+    "email": "Email Address",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
+  }
+}

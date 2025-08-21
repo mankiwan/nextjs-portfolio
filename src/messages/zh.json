@@ -1,0 +1,59 @@
+{
+  "header": {
+    "home": "首頁",
+    "about": "關於",
+    "skills": "技能", 
+    "projects": "作品",
+    "contact": "聯絡"
+  },
+  "home": {
+    "title": "IT 技能展示",
+    "subtitle": "全端開發者 & 技術愛好者",
+    "description": "熱衷於使用現代技術創造創新解決方案。專精於前端、後端和 DevOps 實踐。",
+    "cta": "查看作品",
+    "contact": "聯繫我"
+  },
+  "about": {
+    "title": "關於我",
+    "subtitle": "專業背景與經驗",
+    "description": "我是一位熱忱的全端開發者，擅長現代網頁技術。",
+    "experience": "年經驗",
+    "projects": "完成專案",
+    "technologies": "掌握技術"
+  },
+  "skills": {
+    "title": "技術技能",
+    "subtitle": "技術與專業領域",
+    "frontend": "前端開發",
+    "backend": "後端開發", 
+    "devops": "DevOps 與雲端",
+    "tools": "開發工具"
+  },
+  "projects": {
+    "title": "精選作品",
+    "subtitle": "近期作品展示",
+    "viewProject": "查看專案",
+    "viewCode": "查看程式碼",
+    "liveDemo": "線上展示",
+    "technologies": "使用技術"
+  },
+  "contact": {
+    "title": "聯絡我",
+    "subtitle": "讓我們討論您的下一個專案",
+    "name": "姓名",
+    "email": "電子郵件",
+    "subject": "主題",
+    "message": "訊息",
+    "send": "發送訊息",
+    "success": "訊息發送成功！",
+    "error": "發送失敗，請重試。"
+  },
+  "common": {
+    "loading": "載入中...",
+    "error": "發生錯誤",
+    "retry": "重試",
+    "close": "關閉",
+    "previous": "上一個",
+    "next": "下一個"
+  }
+}
