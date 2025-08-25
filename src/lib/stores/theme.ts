@@ -2,25 +2,19 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 
 export type Theme = 'light' | 'dark' | 'system'
-export type Language = 'en' | 'zh'
 
-interface AppState {
+interface ThemeState {
   theme: Theme
-  language: Language
-  isMenuOpen: boolean
   setTheme: (theme: Theme) => void
-  setLanguage: (language: Language) => void
-  setIsMenuOpen: (isOpen: boolean) => void
-  toggleMenu: () => void
 }
 
-export const useAppStore = create<AppState>()(
+export const useThemeStore = create<ThemeState>()(
   persist(
-    (set, get) => ({
+    (set) => ({
+      // initial state
       theme: 'system',
-      language: 'en',
-      isMenuOpen: false,
       
+      // actions
       setTheme: (theme: Theme) => {
         set({ theme })
         // Update document theme
@@ -36,24 +30,11 @@ export const useAppStore = create<AppState>()(
           }
         }
       },
-      
-      setLanguage: (language: Language) => {
-        set({ language })
-      },
-      
-      setIsMenuOpen: (isOpen: boolean) => {
-        set({ isMenuOpen: isOpen })
-      },
-      
-      toggleMenu: () => {
-        set({ isMenuOpen: !get().isMenuOpen })
-      }
     }),
     {
-      name: 'portfolio-storage',
+      name: 'theme-storage',
       partialize: (state) => ({
         theme: state.theme,
-        language: state.language,
       }),
     }
   )
@@ -61,7 +42,7 @@ export const useAppStore = create<AppState>()(
 
 // Theme initialization hook
 export const useThemeInit = () => {
-  const theme = useAppStore((state) => state.theme)
+  const theme = useThemeStore((state) => state.theme)
   
   // Return initialization function to be called in useEffect
   return () => {
@@ -76,7 +57,8 @@ export const useThemeInit = () => {
         // Listen for system theme changes
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
         const handleChange = (e: MediaQueryListEvent) => {
-          if (useAppStore.getState().theme === 'system') {
+          // Getting state outside component
+          if (useThemeStore.getState().theme === 'system') {
             root.classList.remove('light', 'dark')
             root.classList.add(e.matches ? 'dark' : 'light')
           }

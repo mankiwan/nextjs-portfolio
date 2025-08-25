@@ -1,13 +1,13 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useThemeInit, useAppStore } from '@/lib/store'
+import { useThemeInit, useThemeStore } from '@/lib/stores'
 // import { AnimatedBackground } from './AnimatedBackground' // Removed all animations
 // import { AnimatedCursor } from './AnimatedCursor' // Disabled due to performance issues
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const initTheme = useThemeInit()
-  const { theme } = useAppStore()
+  const { theme } = useThemeStore()
   
   useEffect(() => {
     if (initTheme) {

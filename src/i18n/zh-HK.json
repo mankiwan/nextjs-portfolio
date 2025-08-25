@@ -1,4 +1,9 @@
 {
+  "metadata": {
+    "title": "Vicky Next 技能展示",
+    "description": "全端開發者與技術愛好者展示現代網頁開發技能",
+    "siteName": "Vicky 的作品集"
+  },
   "header": {
     "home": "首頁",
     "about": "關於",

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { Menu, X, Sun, Moon, Monitor, Globe } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { useAppStore, type Theme, type Language } from '@/lib/store'
+import { useAppStore, useThemeStore, type Theme, type Language } from '@/lib/stores'
 import { cn } from '@/lib/utils'
 
 const navigation = [
@@ -25,7 +25,8 @@ const themes: { value: Theme; icon: typeof Sun; label: string }[] = [
 
 const languages: { value: Language; label: string; flag: string }[] = [
   { value: 'en', label: 'English', flag: '🇺🇸' },
-  { value: 'zh', label: '中文', flag: '🇹🇼' },
+  { value: 'zh-HK', label: '繁體中文', flag: '🇭🇰' },
+  { value: 'zh-CN', label: '简体中文', flag: '🇨🇳' },
 ]
 
 export function Navbar() {
@@ -38,7 +39,8 @@ export function Navbar() {
   const [isThemeMenuOpen, setIsThemeMenuOpen] = useState(false)
   const [isLangMenuOpen, setIsLangMenuOpen] = useState(false)
   
-  const { theme, setTheme, language, setLanguage } = useAppStore()
+  const { language, setLanguage } = useAppStore()
+  const { theme, setTheme } = useThemeStore()
 
   const handleLanguageChange = (newLanguage: Language) => {
     setLanguage(newLanguage)

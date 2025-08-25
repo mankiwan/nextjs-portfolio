@@ -1,4 +1,9 @@
 {
+  "metadata": {
+    "title": "Vicky Next Skills Showcase",
+    "description": "Full-Stack Developer & Technology Enthusiast showcasing modern web development skills",
+    "siteName": "Vicky's Portfolio"
+  },
   "header": {
     "home": "Home",
     "about": "About",

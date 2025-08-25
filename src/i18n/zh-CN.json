@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "title": "Vicky Next 技能展示",
+    "description": "全栈开发者与技术爱好者展示现代网页开发技能",
+    "siteName": "Vicky 的作品集"
+  },
+  "header": {
+    "home": "首页",
+    "about": "关于",
+    "skills": "技能", 
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "home": {
+    "title": "IT 技能展示",
+    "subtitle": "全栈开发者 & 技术爱好者",
+    "description": "热衷于使用现代技术创造创新解决方案。专精于前端、后端和 DevOps 实践。",
+    "cta": "查看项目",
+    "contact": "联系我"
+  },
+  "about": {
+    "title": "关于我",
+    "subtitle": "专业背景与经验",
+    "description": "我是一位热忱的全栈开发者，擅长现代网页技术。",
+    "experience": "年经验",
+    "projects": "完成项目",
+    "technologies": "掌握技术"
+  },
+  "skills": {
+    "title": "技术技能",
+    "subtitle": "技术与专业领域",
+    "frontend": "前端开发",
+    "backend": "后端开发", 
+    "devops": "DevOps 与云端",
+    "tools": "开发工具"
+  },
+  "projects": {
+    "title": "精选项目",
+    "subtitle": "近期项目展示",
+    "viewProject": "查看项目",
+    "viewCode": "查看代码",
+    "liveDemo": "在线演示",
+    "technologies": "使用技术"
+  },
+  "contact": {
+    "title": "联系我",
+    "subtitle": "让我们讨论您的下一个项目",
+    "name": "姓名",
+    "email": "电子邮件",
+    "subject": "主题",
+    "message": "消息",
+    "send": "发送消息",
+    "success": "消息发送成功！",
+    "error": "发送失败，请重试。"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "发生错误",
+    "retry": "重试",
+    "close": "关闭",
+    "previous": "上一个",
+    "next": "下一个"
+  }
+}
